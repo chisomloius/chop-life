@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <title>Home | Choplife Kitchen </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    
+</head>
+<body>
+    <!--the clear space class helps us display
+    elements without hiding them-->
+    <header class="clear-space">
+        <!--start of header row-->
+        <div class="row limited-row">
+            <div class="column small-12">
+                <img src="/img/logo.svg" alt="choplife-logo">
+                <h1>Choplife</h1>
+                <h2>Kitchen</h2>
+            </div>
+        <!--end of headeer div-->
+        </div>
+    </header>
+
+    <nav class="clear-space"> 
+        <div class="row limited-row">
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Soups</a></li>
+                <li><a href="meals.html">Meals</a></li>
+                <li><a href="pastries.html">Pastries</a></li>
+                <li><a href="dieters.html">Dieters</a></li>
+                <li><a href="appetite.html">Appetizers/Desserts</a></li>
+                <li><a href="fruities.html">Fruiters</a></li>
+                <li><a href="combos.html">Combos</a></li>
+                <li><a href="event.html">Event Cookings</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <main class="clear-space">
+        <div class="row limited-row">
+            <!--removing only div class = limited-row, will cause the image to render to above max-width 
+                    screen of 1140px to fill all white background-->
+            <div class="column small-12">
+                <!--removing the div class = column small-12 will cause the image to render to max-width 
+                    screen of 1140px-->
+                <img src="img/hero-image.jpg" alt="Pearl's Hero Image" width="1140" height="561">
+            </div>
+
+        </div>
+
+        <div class="row limited-row">
+            <div class="column small-12">
+                <h1>This Week's Soup</h1>
+            </div>
+        </div>
+
+        <div class="row limited-row">
+            <div class="column small-12 medium-6 soups">
+                <h6>Oha Soup</h6>
+                <img src="img/foodlist/pie-apple.jpg" alt="pie-apple">
+                <p>SALE: N 2,000.00/Litre <small>(Discounts Apply)</small></p>
+            </div>
+            <div class="column small-12 medium-6 soups">
+                <h6>Afang Soup</h6>
+                <img src="img/foodlist/pie-cherry.jpg" alt="pie-apple">
+                <p>SALE: N 1,500.00/Litre <small>(Discounts Apply)</small></p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="clear-space">
+        <!--start of footer div-->
+        <div class="row limited-row">
+            <div class="column small-12 medium-6 large-3">
+                <h2>Location</h2>
+                <ul>
+                    <li>Choplife Kitchen</li>
+                    <li>123 Ozuoba Street</li> 
+                    <li>Port Harcourt, Nigeria</li>
+                </ul>
+            </div>
+            <div class="column small-12 medium-6 large-3">
+                <h2>Company</h2>
+                <ul>
+                    <li>Catering</li>
+                    <li>Delivery</li> 
+                    <li>Quick Recipes</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="column small-12 medium-6 large-3">
+                <h2>Social</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li> 
+                    <li>Instagram</li>
+                    <li>Pinterest</li>
+                </ul>
+            </div>
+            <div class="column small-12 medium-6 large-3">
+                <h2>About Us</h2>
+                <img src="/img/logo2.png" alt="coplogo">
+                <p>&copy; 2021 &bull; <small>all rights reserved.</small></p>
+            </div>
+            <!--end of footer div-->
+            </div>
+    </footer>
+    <script src="js/menu-toggle.js"></script>
+</body>
+</html>
+

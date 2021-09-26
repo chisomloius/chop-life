@@ -1,0 +1,34 @@
+@media only screen and (min-width: 768px) {
+    
+    /*GRID*/
+    .medium-6{
+        width: 50%;
+    }
+    .medium-4{
+        width: 33.3333%;
+    }
+
+    /*header css*/
+    .header h1{
+        font-size: 2.7rem;
+    }
+    .header h2{
+        font-size: 1.35rem;
+    }
+    header img{
+        height: 100px;
+    }
+    /*nav css*/
+    nav button{
+        display: none;
+    }
+    nav ul{
+        display: block;
+    }
+    nav li{
+        width: 25%;
+        float: left;
+    }
+
+
+}
