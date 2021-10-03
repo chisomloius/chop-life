@@ -1,0 +1,32 @@
+header {
+    background-color: #0a2735;
+}
+header h1, header h2 {
+    margin: 0;
+    color: #fff; 
+    font-weight: 300;
+    font-style: italic;
+}
+header h1 { 
+	padding: .5rem 0 0 0;
+    font-size: 1.8rem;
+}
+header h2{
+	padding: .1rem 0 0 0;
+    font-size: 0.9rem;  
+}
+header img {
+    float: left; 
+    height: 85px;
+    padding-right: 10px; 
+}
+/*bglight css*/
+.bg-light{
+    background-color: #e9e8eef1 !important;
+}
+
+/*footer css*/
+footer{
+    background-color: #0a2735;
+    color: #fff;
+}

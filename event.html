@@ -9,178 +9,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <!--link to css bootstrap  and cssfile-->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
     
 </head>
 <body>
-    <!--the clear space class helps us display
-    elements without hiding them-->
-    <header class="clear-space">
+    
+    <header>
         <!--start of header row-->
-        <div class="row limited-row">
-            <div class="column small-12">
-                <img src="/img/logo.svg" alt="choplife-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="/img/logo.svg" alt="choplife-logo">
                 <h1>Choplife</h1>
                 <h2>Kitchen</h2>
+                </div>
             </div>
-        <!--end of headeer div-->
         </div>
+        <!--end of headeer div-->
     </header>
 
-    <nav class="clear-space"> 
-        <div class="row limited-row">
-            <button id="hamburgerBtn">&#9776;</button>
-            <ul id="primaryNav">
-                <li><a href="index.html">Soups</a></li>
-                <li><a href="meals.html">Meals</a></li>
-                <li><a href="pastries.html">Pastries</a></li>
-                <li><a href="dieters.html">Dieters</a></li>
-                <li><a href="appetite.html">Appetizers/Desserts</a></li>
-                <li><a href="fruities.html">Fruiters</a></li>
-                <li><a href="combos.html">Combos</a></li>
-                <li class="active"><a href="event.html">Event Cookings</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Soups<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meals.html">Meals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pastries.html">Pastries</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dieters.html">Dieters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appetite.html">Appetizers/Desserts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fruities.html">Fruities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="combos.html">Combos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="event.html" tabindex="-1" aria-disabled="true">Events Cookings</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
     
     
-    <main class="clear-space">
-    
-        <div class="row limited-row">
-            <div class="column small-12">
-                <h1>Meals</h1>
+      <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Book and Cook</h1>
+                </div>
             </div>
         </div>
 
-        <div class="row limited-row">
-            <div class="column small-6 medium-4 large-3">
-                <h3>Jollof Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,360/Plate</p>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Jollof Rice">
+                    <h5 class="card-title">Jollof Rice</h5>
+                    <p class="card-text">N 1,260/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
+                    <h5 class="card-title">Ofada Rice</h5>
+                    <p class="card-text">N 1,360/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
+                    <h5 class="card-title">Ofada Rice</h5>
+                    <p class="card-text">N 1,460/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Abakiliki Rice">
+                    <h5 class="card-title">Abakiliki Rice</h5>
+                    <p class="card-text">N 1,560/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
             </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Ofada Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,460/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Abakiliki Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,560/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Aba Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,660/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Korean Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,760/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Coleslaw</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,860/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Korean Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 1,960/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Korean Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,060/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Korean Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,160/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Russian Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,260/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Korean Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,360/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Deutsche Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,460/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Jamaican Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,660/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Thai Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,760/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Valencia Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,860/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Sushi Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 2,960/Plate</p>
-            </div>
-            <div class="column small-6 medium-4 large-3">
-                <h3>Brown Rice</h3>
-                <img src="img/foodlist/pie-apple.jpg" alt="Korean Rice">
-                <p>N 3,060/Plate</p>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Jollof Rice">
+                    <h5 class="card-title">Jollof Rice</h5>
+                    <p class="card-text">N 1,260/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
+                    <h5 class="card-title">Ofada Rice</h5>
+                    <p class="card-text">N 1,360/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
+                    <h5 class="card-title">Ofada Rice</h5>
+                    <p class="card-text">N 1,460/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
+                <div class="card">
+                    <img src="img/foodlist/pie-apple.jpg" alt="Abakiliki Rice">
+                    <h5 class="card-title">Abakiliki Rice</h5>
+                    <p class="card-text">N 1,560/Plate</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+
             </div>
         </div>
     </main>
 
 
-    <footer class="clear-space">
+    <footer>
         <!--start of footer div-->
-        <div class="row limited-row">
-            <div class="column small-12 medium-6 large-3">
-                <h2>Location</h2>
-                <ul>
-                    <li>Choplife Kitchen</li>
-                    <li>123 Ozuoba Street</li> 
-                    <li>Port Harcourt, Nigeria</li>
-                </ul>
+        <div class="container mt-4 pt-3">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Location</h2>
+                    <ul>
+                        <li>Choplife Kitchen</li>
+                        <li>123 Ozuoba Street</li> 
+                        <li>Port Harcourt, Nigeria</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Company</h2>
+                    <ul>
+                        <li>Catering</li>
+                        <li>Delivery</li> 
+                        <li>Quick Recipes</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>Social</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li> 
+                        <li>Instagram</li>
+                        <li>Pinterest</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h2>About Us</h2>
+                    <img src="/img/logo2.png" alt="coplogo">
+                    <p>&copy; 2021 &bull; <small>all rights reserved.</small></p>
+                </div>
             </div>
-            <div class="column small-12 medium-6 large-3">
-                <h2>Company</h2>
-                <ul>
-                    <li>Catering</li>
-                    <li>Delivery</li> 
-                    <li>Quick Recipes</li>
-                    <li>Support</li>
-                </ul>
-            </div>
-            <div class="column small-12 medium-6 large-3">
-                <h2>Social</h2>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li> 
-                    <li>Instagram</li>
-                    <li>Pinterest</li>
-                </ul>
-            </div>
-            <div class="column small-12 medium-6 large-3">
-                <h2>About Us</h2>
-                <img src="/img/logo2.png" alt="coplogo">
-                <p>&copy; 2021 &bull; <small>all rights reserved.</small></p>
-            </div>
-            <!--end of footer div-->
-            </div>
+             
+        </div>
+        <!--end of footer div-->
     </footer>
-    <script src="js/menu-toggle.js"></script>
+
+    <!-- jQuery first then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 
