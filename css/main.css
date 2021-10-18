@@ -24,6 +24,12 @@ header img {
 .bg-light{
     background-color: #e9e8eef1 !important;
 }
+/*jumbotron css*/
+.jumbotron{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.1);
+    height: 30vh;
+    background-size: cover;
+}
 
 /*footer css*/
 footer{
