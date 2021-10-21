@@ -31,6 +31,10 @@ header img {
     background-size: cover;
 }
 
+.jumbotron-order{
+    background: url('/img/carousel.jpg') no-repeat fixed;
+ }
+
 /*footer css*/
 footer{
     background-color: #0a2735;
