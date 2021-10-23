@@ -24,67 +24,148 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <img src="/img/logo.svg" alt="choplife-logo">
+                    <a href="index.html"><img src="/img/logo.svg" alt="choplife-logo"></a>
                     <h1>Choplife</h1>
                     <h2 class="text-white">Kitchen</h2>
                 </div>
             </div>
         </div>
         <!--end of headeer div-->
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Soups<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="meals.html">Meals</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Pastries
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="cakes.html">Cakes</a>
+                      <a class="dropdown-item" href="pies.html">Pies</a>
+                      <a class="dropdown-item" href="donughts.html">Donughts</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="pastries.html">All pastries</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="dieters.html">Dieters</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="appetite.html">Appetizers/Desserts</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Fruities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="smoothies.html">Smoothies</a>
+                      <a class="dropdown-item" href="parfaits.html">Parfaits</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="pastries.html">All fruities</a>
+                    </div>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="fruities.html">Fruities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="combos.html">Combos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="event.html" tabindex="-1" aria-disabled="true">Events Cookings</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!--end of navbar div-->
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Soups<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="meals.html">Meals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pastries.html">Pastries</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="dieters.html">Dieters</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="appetite.html">Appetizers/Desserts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="fruities.html">Fruities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="combos.html">Combos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="event.html" tabindex="-1" aria-disabled="true">Events Cookings</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
     
     <main role="main">
-        <div class="container">
+        <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#welcomeCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#welcomeCarousel" data-slide-to="1"></li>
+              <li data-target="#welcomeCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active welcome-carousel-image1">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Welcome to Choplife Kitchen</h1>
+                    <p>Internet kitchen of the best cooked meal.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item welcome-carousel-image2">
+                <div class="container">
+                  <div class="carousel-caption text-left">
+                    <h1>Discover our monthly meal offers</h1>
+                    <p>Our delicious meals delivered to your door. Twice a week.</p>
+                    <p><a class="btn btn-lg btn-primary" href="meals.html" role="button">Get a Nylon</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item welcome-carousel-image3">
+                <div class="container">
+                  <div class="carousel-caption text-right">
+                    <h1>Browse the fruities in our collection.</h1>
+                    <p>Every days work deserves the best. Enjoy our fruities here.</p>
+                    <p><a class="btn btn-lg btn-primary" href="fruities.html" role="button">Go to fruities</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#welcomeCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#welcomeCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div> 
+
+        <div class="container mt-2">
             <div class="row">
-                <div class="col-12">
-                    <img src="img/hero-image.jpg" alt="Choplife Image"class="img-fluid rounded-lg">
+                <div class="col-sm-12-col-md-6 text-center">
+                    <h1 class="font-italic">Our History</h1>
+                    <h6 class="text-muted">Why Choplife ❓</h6>
+                    <p>We started cooking for it was for fun in our room in late December of 2016,
+                        but most importantly for natural nutrients that gives our bosy the needed 
+                        energy to go about daily task without being junkedby inappropriate diets 
+                        that slows you down, unsure 😕 or make you impressionable.
+                    </p>
+                    <p>
+                        By the next five years we have moved to our online store where cooked meals are
+                        delivered to you at no-extra cost than what you would have expected. Since eating a 
+                        a good, nutritious meal willl carry you along whatever activity there's before you. 
+                    </p>
+                    <p>
+                        Choplife just want to make every meal salivating and special that is why you should always
+                        satisfy your hunger by eating only the world best cooked meal.
+                    </p>
+
                 </div>
             </div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-12">
-                    <h1>This Week's Offers
-                        <small class="text-muted">fresh, cooked Kitchen food</small>
-                    </h1>
-                </div>
-            </div>
+        <div class="col-sm-12-col-md-6 p-4">
+            <h1>This Week's: 
+                <small class="text-muted">freshly, cooked kitchen food</small>
+            </h1>
         </div>
 
         <div class="jumbotron jumbotron-oha-soup container-fluid">
@@ -122,23 +203,23 @@
                             <strong>N 2000/Litre</strong>
                         </div>
                         <div class="col-md-7">
-                            <a type="button" href="nylonbag.html" class="btn btn-info">
+                            <a type="button" href="nylonbag.html" class="btn btn-info float-right" data-toggle="modal" data-target="#addToBasketModal1">
                                 To Nylon
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="p-4 mb-2 bg-light border border-primary">
-                <h4>Message from Choplife Kitchen</h4>
-                <p class="mb-0 font-italic">
-                    Put your party Jollof Rice in the hands and concern your self with your guests only.
-                    Try our firewood Kitchen <a href="events.html">Here.</a>
-                </p>
-            </div>
         </div>
         
+        <div class="p-4 mb-2 bg-light border border-primary">
+            <h4>Message from Choplife Kitchen</h4>
+            <p class="mb-0 font-italic">
+                Put your party Jollof Rice in the hands and concern your self with your guests only.
+                Try our firewood Kitchen <a href="events.html">Here.</a>
+            </p>
+        </div>
+
         <div class="jumbotron jumbotron-afang-soup container-fluid">
             <div class="container">
                 <h1 class="display-4 text-white">Afang Soup</h1>
@@ -169,7 +250,7 @@
                             <strong>N 2000/Litre</strong>
                         </div>
                         <div class="col- md-7">
-                            <a type="button" href="nylonbag.html" class="btn btn-info">
+                            <a type="button" href="nylonbag.html" class="btn btn-info float-right" data-toggle="modal" data-target="#addToBasketModal2">
                                 To Nylon
                             </a>
                         </div>
@@ -217,12 +298,47 @@
                 </table>
             </div>
         </div>
-        
-            
-        
-
     </main>
 
+
+    <div class="modal fade" tabindex="-1" id="addToBasketModal1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Choplife Kitchen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Oha Soup was added to your nylonbag</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Enter kitchen</button>
+                    <button type="button" class="btn btn-primary">View nylonbag</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="addToBasketModal2" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Choplife Kitchen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Afang Soup was added to your nylonbag</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Enter kichen</button>
+                    <button type="button" class="btn btn-primary">View nylonbag</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <!--start of footer div-->
