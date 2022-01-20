@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
     <title>Meals | Pearl Kitchen </title>
     <!--title icon-->
-    <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="img/png" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     
 </head>
 <body>
-
+    
     <header>
         <!--start of header row-->
         <div class="container">
@@ -47,7 +47,7 @@
             <li class="nav-item">
               <a class="nav-link" href="pastries.html">Pastries</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="dieters.html">Dieters</a>
             </li>
             <li class="nav-item">
@@ -56,7 +56,7 @@
             <li class="nav-item">
               <a class="nav-link" href="fruities.html">Fruities</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="combos.html">Combos</a>
             </li>
             <li class="nav-item">
@@ -64,80 +64,62 @@
             </li>
           </ul>
         </div>
-    </nav>
+      </nav>
     
     
-    <main>
+      <main>
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12">
-                    <h1>Combos</h1>
+                <h1>Leave your thoughts, menu sugegstions or feedbacks here!</h1>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="card-deck">
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Jollof Rice">
-                    <h5 class="card-title">Jollof Rice</h5>
-                    <p class="card-text">N 1,260/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+            <div class="row ml-5">
+                <div class="col-12 col-md-6">
+                    <form action="contact.html"  enctype ="application/x-www-form-urlencoded" class="form-group ">
+                        <fieldset>
+                            <legend>Basic Information</legend>
+                            <label>*First Name: <input type="text" name="firstName" required minlength="5" maxlength="20"></label>
+                            <label>*Last Name: <input type="text" name="lastName" required minlength="5" maxlength="20"></label>
+                            <label>Email: <input type="email" name="email"></label>
+                                <input type="radio" name="EmailType">cell
+                                <input type="radio" name="EmailType">work
+                                <input type="radio" name="EmailType">home
+                            <br>
+                            <label>Phone: <input type="tel" name="lastName" pattern="\(\d{234}\), {081}\ \d{3}-\d{4]"></label>
+                                <input type="checkbox" name="cell"> cell
+                                <input type="checkbox" name="work"> work
+                                <input type="checkbox" name="inApp"> app
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>*Your feedbacks</legend>
+                            <textarea name="comments" cols="50" rows="10" required></textarea><br>
+                            <label>Comment Type: <select name="commentType" multiple="multiple" size="4">
+                                                    <option value="deliveryComplaints">Delivery Complaints</option>
+                                                    <optgroup label="Tech ">
+                                                        <option value="bugs">Bugs</option>
+                                                        <option value="dataRequest">Data Request</option>
+                                                    </optgroup>
+                                                    <option value="menusUpdate">Menus Update</option>
+                                                    <option value="partnerships">Partnerships</option>
+                                                    <option value="refunds">Refunds</option>
+                                        </select>
+                            </label><br>
+                            <label>Severirty: <input type="number" min="1" max="5" name="severityName"></label><br>
+                            <label>Visit: <input type="range" min="1" max="2" name=></label><br>
+                            <label>Issue Date: <input type="date" name="issueDate"></label><br>
+                            <label>Issue Time: <input type="time" name="issueTime"></label>
+                            <input type="hidden" name="source" value="webContactForm">
+                        </fieldset>
+                        
+                        <input type="submit" value="Submit">
+                        
+                    </form>
                 </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
-                    <h5 class="card-title">Ofada Rice</h5>
-                    <p class="card-text">N 1,360/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
-                    <h5 class="card-title">Ofada Rice</h5>
-                    <p class="card-text">N 1,460/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Abakiliki Rice">
-                    <h5 class="card-title">Abakiliki Rice</h5>
-                    <p class="card-text">N 1,560/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-            </div>
-
-            <div class="card-deck">
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Jollof Rice">
-                    <h5 class="card-title">Jollof Rice</h5>
-                    <p class="card-text">N 1,260/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
-                    <h5 class="card-title">Ofada Rice</h5>
-                    <p class="card-text">N 1,360/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Ofada Rice">
-                    <h5 class="card-title">Ofada Rice</h5>
-                    <p class="card-text">N 1,460/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-                <div class="card">
-                    <img src="img/foodlist/pie-apple.jpg" alt="Abakiliki Rice">
-                    <h5 class="card-title">Abakiliki Rice</h5>
-                    <p class="card-text">N 1,560/Plate</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-
-            </div>
+            </div> 
+            
         </div>
     </main>
 
@@ -175,10 +157,10 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <h2>About Us</h2>
                     <img src="/img/logo2.png" alt="coplogo">
-                    <p>&copy; <span id="year"></span> <small>all rights reserved.</small></p>
+                    <p>&copy; 2021 &bull; <small>all rights reserved.</small></p>
                 </div>
             </div>
-              
+             
         </div>
         <!--end of footer div-->
     </footer>
@@ -186,13 +168,7 @@
     <!-- jQuery first then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Assign the current year to the copyright line
-        let date = new Date();
-        let year = date.getFullYear();
 
-        document.getElementById('year').innerHTML = year;
-    </script>
 </body>
 </html>
 

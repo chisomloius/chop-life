@@ -199,10 +199,10 @@
                 <div class="col-12 col-md-6 col-xl-3">
                     <h2>About Us</h2>
                     <img src="/img/logo2.png" alt="coplogo">
-                    <p>&copy; 2021 &bull; <small>all rights reserved.</small></p>
+                    <p>&copy; <span id="year"></span> <small>all rights reserved.</small></p>
                 </div>
             </div>
-             
+              
         </div>
         <!--end of footer div-->
     </footer>
@@ -210,6 +210,13 @@
     <!-- jQuery first then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Assign the current year to the copyright line
+        let date = new Date();
+        let year = date.getFullYear();
+
+        document.getElementById('year').innerHTML = year;
+    </script>
 
 </body>
 </html>
